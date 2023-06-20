@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ex04</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            position: relative;
+        }
+
+        header {
+            position: fixed;
+            top: 0%;
+            width: 100%;
+            background-color: #344e41;
+            z-index: 99;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: #dad7cd;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 97%;
+            margin: auto;
+            z-index: 1;
+        }
+
+        h1{
+            font-family: 'Ma Shan Zheng', cursive;
+            
+            text-align: center;
+        }
+
+        /*div{
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }*/
+
+        .navbar {
+            margin: auto;
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .nav-branding {
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 5px;
+            
+            color: #dad7cd;
+            font-size: clamp(30px,3vw,50px);
+            white-space: nowrap; /* 防止换行 */
+        }
+
+        .nav-branding > p {
+           text-align: right;
+        }
+
+        .home, .about, .contact {
+            height: 720px;
+            margin-top: 70px;
+            border: 1px solid black;
+        }
+
+        .box1 {
+            width: 100%;
+            height: 120px;
+            position: relative;
+            top: 70px;
+            
+        }
+        .pic1{
+            width: 100%;
+            height: 100%;
+            padding-left: 2.25em;
+            padding-top: 3em;
+    
+        }
+        .text1 {
+            width: 900px;
+            height: 300px;
+            text-align: center;
+            border-color: aquamarine;
+            position: relative;
+            right: 50px;
+            left: 50%;
+            font-size: 2em;
+            font-family: 'Ma Shan Zheng', cursive;
+            top: -169px;
+            background-color: #dad7cd;
+            padding-top: 160px;
+            padding-bottom: 31px;
+            padding-right: 26px;
+            
+
+
+        }
+
+
+        .project{
+            margin-top: 440px;
+            width: 100%;
+        }
+
+
+        .toutiao{
+            height: 370px;
+            position: relative;
+            top: 70px;
+            color: #588157;
+            border: #ffffff;
+            text-align: center;
+            font-size: clamp(20px,2vw,50px);
+            background-color: #000000;
+            z-index: 2;
+            
+        }
+
+        .tou1{
+            padding: 80px;
+        }
+
+        .tou2{
+            color: #a3b18a;
+            font-size: 1.5em;
+        }
+
+        .pic2{
+            margin-top: 30px;
+            height: 120%;
+            width: 120%;
+        }
+
+        .text2{
+            display: flex;
+            margin-left: 17.5%;
+            margin-right: 17.5%;
+        }
+
+        .text2> div{
+            margin: auto;
+            
+        }
+        .txt3{
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-size: 1.15em;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <p href="/" class="nav-branding">Welcome To My Site</p>
+            <ul class="nav-menu">
+                <li class="nav-link"><a href="/">Home</a></li>
+                <li class="nav-link"><a href="/">About</a></li>
+                <li class="nav-link"><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="toutiao">
+    <h1 class="tou1">分享一下我在网络世界的几个作品</h1>
+    <h1 class="tou2">看看爷在这一生中在虚拟世界做的作品吧</h1>
+</div>
+
+<div class="box1">
+    <div class="pic1">
+        <img src="wix_logo-removebg-preview.png" alt="">
+    </div>
+    <div class="text1">
+     <p>在去年的灵魂PPT课程中，我曾运用Wix网站来制作个人报告，
+        这次恰好我也参加了自主学习课程，并选择了这个报告作为期末专题，可谓一举两得.
+        这个在线自制网站与Visual Studio不同，它已经提供了一个完整的解决方案，
+        我只需简单地拖放和使用即可。</p>
+    </div>
+</div>
+
+<div>
+    <img class="project" src="wix project.png" alt="">
+
+</div>
+
+<div class="txt3">
+    <h1>2023年爷上过的课程</h1>
+</div>
+
+<div class="text2">
+    <div class="pic2">
+        <img src="logo2.0.jpg" alt="">
+    </div>
+    <div class="txt2">
+        <img src="visual.png" alt="">
+    </div>
+
+    
+
+</div>
+</body>
+</html>
